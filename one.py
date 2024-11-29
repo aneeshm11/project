@@ -144,7 +144,7 @@ s=input()
 
 ele = parse_elements(s)
 
-print(ele)
+
 
 elementdata    = pd.read_csv(os.path.join(    scriptdir , "./elementdata.csv")  )
 enthalpy_data  = pd.read_csv(os.path.join(    scriptdir , "./enthalpydata.csv") )
