@@ -1,0 +1,26 @@
+{
+    "Fe": [
+      {"oxide": "FeO",   "temp": "600-900°C"},
+      {"oxide": "Fe2O3", "temp": "700-1000°C"},
+      {"oxide": "Fe3O4", "temp": "400-500°C"}
+    ],
+    "Cr": [
+      {"oxide": "Cr2O3", "temp": "600-800°C"}
+    ],
+    "Ni": [
+      {"oxide": "NiO", "temp": "500-900°C"}
+    ],
+    "Co": [
+      {"oxide": "CoO",   "temp": "400-700°C"},
+      {"oxide": "Co3O4", "temp": "700-1000°C"}
+    ],
+    "Mn": [
+      {"oxide": "MnO", "temp": "700-900°C"},
+      {"oxide": "Mn2O3", "temp": "800-1000°C"},
+      {"oxide": "MnO2", "temp": "200-500°C"}
+    ],
+    "Cu": [
+      {"oxide": "CuO", "temp": "300-500°C"}
+    ]
+  }
+  
