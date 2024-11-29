@@ -2,6 +2,10 @@ import pandas as pd
 import math
 import numpy as np
 import re
+import os 
+
+scriptdir = os.path.dirname(os.path.abspath(__file__))
+
 
 def split_item(input_string):
     match = re.match(r"([A-Z][a-z]*)(\d+)", input_string)
@@ -98,7 +102,7 @@ def calculate_melting_points(data, elements_dict):
 
 
 def calculate_md_values(elements_dict, data):
-
+    
     md_values_df = data.copy()
     total_md_value = 0
 
@@ -142,10 +146,10 @@ ele = parse_elements(s)
 
 print(ele)
 
-elementdata    = pd.read_csv("elementdata.csv")
-enthalpy_data  = pd.read_csv("enthalpydata.csv")  
-melting_points = pd.read_csv("meltingpoint.csv")
-md_values      = pd.read_csv("md_vals.csv")
+elementdata    = pd.read_csv(os.path.join(    scriptdir , "./elementdata.csv")  )
+enthalpy_data  = pd.read_csv(os.path.join(    scriptdir , "./enthalpydata.csv") )
+melting_points = pd.read_csv(os.path.join(    scriptdir , "./meltingpoint.csv"))
+md_values      = pd.read_csv(os.path.join(    scriptdir , "./md_vals.csv"))
 
 
 res  = AtmSizeDiff(ele, elementdata) 
