@@ -180,6 +180,6 @@ print(f"MD-Value : {mdval} ")
 
 print()
 
-print(f"Average melting point: {final_meltingpoint}")
-print(f"Lower limit: {lower}")
-print(f"Upper limit: {upper}")
+print(f"Average melting point: {round(final_meltingpoint , 3)}")
+print(f"Lower limit: {round(lower , 3) }")
+print(f"Upper limit: {round(upper , 3) }")
